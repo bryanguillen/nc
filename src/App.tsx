@@ -86,6 +86,32 @@ function CommunityBenefits() {
   )
 }
 
+function AboutProject() {
+  return (
+    <TwoColumnSection title={'Why This NFT Project?'}>
+      <div>
+        <div className="project-specs-image"></div>
+      </div>
+      <div>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+      </div>
+    </TwoColumnSection>
+  )
+}
+
+function AboutTeam() {
+  return (
+    <TwoColumnSection title={'About Team'}>
+      <div>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+      </div>
+      <div>
+        <div className="project-specs-image"></div>
+      </div>
+    </TwoColumnSection>
+  )
+}
+
 interface OwnProps {
   children: React.ReactNode
   title: string
@@ -111,8 +137,10 @@ function App() {
       <Welcome/>
       <Countdown/>
       <ProjectSpecs/>
-      <ProjectRoadmap/>
       <CommunityBenefits/>
+      <ProjectRoadmap/>
+      <AboutProject/>
+      <AboutTeam/>
     </div>
   )
 }
