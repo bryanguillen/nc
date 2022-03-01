@@ -42,6 +42,50 @@ function Countdown() {
   )
 }
 
+function ProjectSpecs() {
+  return (
+    <TwoColumnSection title={'Project Specs'}>
+      <div>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+      </div>
+      <div>
+        <div className="project-specs-image"></div>
+      </div>
+    </TwoColumnSection>
+  )
+}
+
+function ProjectRoadmap() {
+  return (
+    <TwoColumnSection title={'Project Roadmap'}>
+      <div>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+        <ol>
+          <li>Step 1: Some random step</li>
+          <li>Step 2: Some random step</li>
+          <li>Step 3: Some random step</li>
+        </ol>
+      </div>
+      <div>
+        <div className="project-specs-image"></div>
+      </div>
+    </TwoColumnSection>
+  )
+}
+
+function CommunityBenefits() {
+  return (
+    <TwoColumnSection title={'Community Benefits'}>
+      <div>
+        <div className="project-specs-image"></div>
+      </div>
+      <div>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+      </div>
+    </TwoColumnSection>
+  )
+}
+
 interface OwnProps {
   children: React.ReactNode
   title: string
@@ -66,6 +110,9 @@ function App() {
     <div className="app">
       <Welcome/>
       <Countdown/>
+      <ProjectSpecs/>
+      <ProjectRoadmap/>
+      <CommunityBenefits/>
     </div>
   )
 }

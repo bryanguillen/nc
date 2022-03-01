@@ -62,6 +62,16 @@
 }
 
 /**********************
+ * Project specs
+ **********************/
+
+.project-specs-image {
+  background-color: #fff;
+  height: 300px;
+  width: 300px;
+}
+
+/**********************
  * Media Query
  **********************/
 
