@@ -5,7 +5,6 @@ function Welcome() {
   return (
     <TwoColumnSection title="Lorem Ipsum">
       <div className="welcome-text-container">
-        <h2>Lorem Ipsum</h2>
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum .........</p>
       </div>
       <div className="welcome-gallery">
