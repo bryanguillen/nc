@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
 
+import logo from './assets/logo.png'
+
 function Welcome() {
   return (
     <TwoColumnSection title="Lorem Ipsum">
@@ -159,7 +161,9 @@ function Navigation() {
           <div className="hamburger-icon-stripe"></div>
           <div className="hamburger-icon-stripe"></div>
         </div>
-        <div className="logo-container"></div>
+        <div className="logo-container">
+          <img src={logo} className="navigation-logo" alt="Natty Clowns Logo"/>
+        </div>
       </div>
       {renderNavLinks()}
     </header>

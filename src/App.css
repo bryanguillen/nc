@@ -75,7 +75,13 @@
  * Navigation
  **********************/
 
+.navigation-logo {
+  height: 120.5px;
+  width: 200px;
+}
+
 .navigation-mobile {
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
