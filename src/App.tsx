@@ -131,9 +131,45 @@ function TwoColumnSection({
   )
 }
 
+function Navigation() {
+  const [navVisible, setNavVisible] = useState(false)
+
+  const onClickHamburgerIcon = () => setNavVisible(previousState => !previousState)
+
+  const renderNavLinks = () => {
+    if (!navVisible) return null
+    
+    return (
+      <div className="nav-links">
+        <div className="nav-link">Welcome</div>
+        <div className="nav-link">Acquire</div>
+        <div className="nav-link">Specs</div>
+        <div className="nav-link">Community</div>
+        <div className="nav-link">Roadmap</div>
+        <div className="nav-link">About Team</div>
+      </div>
+    )
+  }
+
+  return (
+    <header className="navigation">
+      <div className="navigation-mobile">
+        <div className="hamburger-icon" onClick={onClickHamburgerIcon}>
+          <div className="hamburger-icon-stripe"></div>
+          <div className="hamburger-icon-stripe"></div>
+          <div className="hamburger-icon-stripe"></div>
+        </div>
+        <div className="logo-container"></div>
+      </div>
+      {renderNavLinks()}
+    </header>
+  )
+}
+
 function App() {
   return (
     <div className="app">
+      <Navigation/>
       <Welcome/>
       <Countdown/>
       <ProjectSpecs/>
