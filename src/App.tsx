@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from 'react'
+import ScrollIntoView from 'react-scroll-into-view'
+
 import './App.css'
 
 import logo from './assets/logo.png'
 
+const WELCOME = "welcome"
+const ACQUIRE = "acquire"
+const SPECS = "specs"
+const COMMUNITY = "community"
+const ROADMAP = "roadmap"
+const TEAM = "team"
+
 function Welcome() {
   return (
-    <TwoColumnSection title="Lorem Ipsum">
+    <TwoColumnSection id={WELCOME} title="Lorem Ipsum">
       <div className="welcome-text-container">
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum .........</p>
       </div>
@@ -32,7 +41,7 @@ function Countdown() {
   }, [])
 
   return (
-    <TwoColumnSection title={'NFT Drop Countdown'}>
+    <TwoColumnSection id={ACQUIRE} title={'NFT Drop Countdown'}>
       <div className="countdown-timer">
         <p>{time}</p>
         <button>Mint</button>
@@ -46,7 +55,7 @@ function Countdown() {
 
 function ProjectSpecs() {
   return (
-    <TwoColumnSection title={'Project Specs'}>
+    <TwoColumnSection id={SPECS} title={'Project Specs'}>
       <div>
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
@@ -59,7 +68,7 @@ function ProjectSpecs() {
 
 function ProjectRoadmap() {
   return (
-    <TwoColumnSection title={'Project Roadmap'}>
+    <TwoColumnSection id={ROADMAP} title={'Project Roadmap'}>
       <div>
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
         <ol>
@@ -77,7 +86,7 @@ function ProjectRoadmap() {
 
 function CommunityBenefits() {
   return (
-    <TwoColumnSection title={'Community Benefits'}>
+    <TwoColumnSection id={COMMUNITY} title={'Community Benefits'}>
       <div>
         <div className="project-specs-image"></div>
       </div>
@@ -90,7 +99,7 @@ function CommunityBenefits() {
 
 function AboutProject() {
   return (
-    <TwoColumnSection title={'Why This NFT Project?'}>
+    <TwoColumnSection id={'about'} title={'Why This NFT Project?'}>
       <div>
         <div className="project-specs-image"></div>
       </div>
@@ -103,7 +112,7 @@ function AboutProject() {
 
 function AboutTeam() {
   return (
-    <TwoColumnSection title={'About Team'}>
+    <TwoColumnSection id={TEAM} title={'About Team'}>
       <div>
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
@@ -116,15 +125,17 @@ function AboutTeam() {
 
 interface OwnProps {
   children: React.ReactNode
+  id: string
   title: string
 }
 
 function TwoColumnSection({
   children,
   title,
+  id,
 }: OwnProps) {
   return (
-    <section className="two-column-section">
+    <section id={id} className="two-column-section">
       <h2 className="two-column-section-header">{title}</h2>
       <div className="two-column-section-body">
         {children}
@@ -137,17 +148,35 @@ interface NavLinksProps {
   mobile?: boolean
 }
 
+interface NavLinkProps {
+  id: string
+  text: string
+}
+
+
+// used to encapsulate scroll into review and keep code dry; essentially a wrapper
+function NavLink({
+  id,
+  text
+}: NavLinkProps) {
+  return (
+    <ScrollIntoView selector={`#${id}`}>
+      <div className="nav-link">{text}</div>
+    </ScrollIntoView>
+  )
+}
+
 function NavLinks({
   mobile = false
 }: NavLinksProps) {
   return (
     <div className={`nav-links ${mobile ? 'nav-links-xs' : 'nav-links-md'}`}>
-      <div className="nav-link">Welcome</div>
-      <div className="nav-link">Acquire</div>
-      <div className="nav-link">Specs</div>
-      <div className="nav-link">Community</div>
-      <div className="nav-link">Roadmap</div>
-      <div className="nav-link">About Team</div>
+      <NavLink id={WELCOME} text="Welcome"/>
+      <NavLink id={ACQUIRE} text="Acquire"/>
+      <NavLink id={SPECS} text="Specs"/>
+      <NavLink id={COMMUNITY} text="Community"/>
+      <NavLink id={ROADMAP} text="Roadmap"/>
+      <NavLink id={TEAM} text="About Team"/>
     </div>
   )
 }
