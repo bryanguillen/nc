@@ -146,37 +146,41 @@ function TwoColumnSection({
 
 interface NavLinksProps {
   mobile?: boolean
+  toggleNavVisibility?: () => void
 }
 
 interface NavLinkProps {
   id: string
   text: string
+  toggleNavVisibility?: () => void
 }
 
 
 // used to encapsulate scroll into review and keep code dry; essentially a wrapper
 function NavLink({
   id,
-  text
+  text,
+  toggleNavVisibility
 }: NavLinkProps) {
   return (
-    <ScrollIntoView selector={`#${id}`}>
+    <ScrollIntoView selector={`#${id}`} onClick={toggleNavVisibility ? toggleNavVisibility : undefined}>
       <div className="nav-link">{text}</div>
     </ScrollIntoView>
   )
 }
 
 function NavLinks({
-  mobile = false
+  mobile = false,
+  toggleNavVisibility
 }: NavLinksProps) {
   return (
     <div className={`nav-links ${mobile ? 'nav-links-xs' : 'nav-links-md'}`}>
-      <NavLink id={WELCOME} text="Welcome"/>
-      <NavLink id={ACQUIRE} text="Acquire"/>
-      <NavLink id={SPECS} text="Specs"/>
-      <NavLink id={COMMUNITY} text="Community"/>
-      <NavLink id={ROADMAP} text="Roadmap"/>
-      <NavLink id={TEAM} text="About Team"/>
+      <NavLink toggleNavVisibility={toggleNavVisibility} id={WELCOME} text="Welcome"/>
+      <NavLink toggleNavVisibility={toggleNavVisibility} id={ACQUIRE} text="Acquire"/>
+      <NavLink toggleNavVisibility={toggleNavVisibility} id={SPECS} text="Specs"/>
+      <NavLink toggleNavVisibility={toggleNavVisibility} id={COMMUNITY} text="Community"/>
+      <NavLink toggleNavVisibility={toggleNavVisibility} id={ROADMAP} text="Roadmap"/>
+      <NavLink toggleNavVisibility={toggleNavVisibility} id={TEAM} text="About Team"/>
     </div>
   )
 }
@@ -184,13 +188,13 @@ function NavLinks({
 function Navigation() {
   const [navVisible, setNavVisible] = useState(false)
 
-  const onClickHamburgerIcon = () => setNavVisible(previousState => !previousState)
+  const toggleNavVisibility = () => setNavVisible(previousState => !previousState)
 
   const renderMobileNavLinks = () => {
     if (!navVisible) return null
     
     return (
-      <NavLinks mobile/>
+      <NavLinks toggleNavVisibility={toggleNavVisibility} mobile/>
     )
   }
 
@@ -199,7 +203,7 @@ function Navigation() {
       <div className="logo-container">
         <img src={logo} className="navigation-logo" alt="Natty Clowns Logo"/>
       </div>
-      <div className="hamburger-icon" onClick={onClickHamburgerIcon}>
+      <div className="hamburger-icon" onClick={toggleNavVisibility}>
         <div className="hamburger-icon-stripe"></div>
         <div className="hamburger-icon-stripe"></div>
         <div className="hamburger-icon-stripe"></div>
