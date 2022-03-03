@@ -133,39 +133,50 @@ function TwoColumnSection({
   )
 }
 
+interface NavLinksProps {
+  mobile?: boolean
+}
+
+function NavLinks({
+  mobile = false
+}: NavLinksProps) {
+  return (
+    <div className={`nav-links ${mobile ? 'nav-links-xs' : 'nav-links-md'}`}>
+      <div className="nav-link">Welcome</div>
+      <div className="nav-link">Acquire</div>
+      <div className="nav-link">Specs</div>
+      <div className="nav-link">Community</div>
+      <div className="nav-link">Roadmap</div>
+      <div className="nav-link">About Team</div>
+    </div>
+  )
+}
+
 function Navigation() {
   const [navVisible, setNavVisible] = useState(false)
 
   const onClickHamburgerIcon = () => setNavVisible(previousState => !previousState)
 
-  const renderNavLinks = () => {
+  const renderMobileNavLinks = () => {
     if (!navVisible) return null
     
     return (
-      <div className="nav-links">
-        <div className="nav-link">Welcome</div>
-        <div className="nav-link">Acquire</div>
-        <div className="nav-link">Specs</div>
-        <div className="nav-link">Community</div>
-        <div className="nav-link">Roadmap</div>
-        <div className="nav-link">About Team</div>
-      </div>
+      <NavLinks mobile/>
     )
   }
 
   return (
     <header className="navigation">
-      <div className="navigation-mobile">
-        <div className="hamburger-icon" onClick={onClickHamburgerIcon}>
-          <div className="hamburger-icon-stripe"></div>
-          <div className="hamburger-icon-stripe"></div>
-          <div className="hamburger-icon-stripe"></div>
-        </div>
-        <div className="logo-container">
-          <img src={logo} className="navigation-logo" alt="Natty Clowns Logo"/>
-        </div>
+      <div className="logo-container">
+        <img src={logo} className="navigation-logo" alt="Natty Clowns Logo"/>
       </div>
-      {renderNavLinks()}
+      <div className="hamburger-icon" onClick={onClickHamburgerIcon}>
+        <div className="hamburger-icon-stripe"></div>
+        <div className="hamburger-icon-stripe"></div>
+        <div className="hamburger-icon-stripe"></div>
+      </div>
+      <NavLinks/>
+      {renderMobileNavLinks()}
     </header>
   )
 }
