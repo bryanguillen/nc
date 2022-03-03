@@ -214,16 +214,29 @@ function Navigation() {
   )
 }
 
+const CtaBanner = () => {
+  return (
+    <div className="cta-banner">
+      <div className="cta-banner-text">Want to stay up to date on Natty Clowns NFTs?</div>
+      <div className="cta-banner-button">
+        <button>Follow Us On Twitter</button>
+      </div>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="app">
       <Navigation/>
       <Welcome/>
       <Countdown/>
+      <CtaBanner/>
       <ProjectSpecs/>
       <CommunityBenefits/>
       <ProjectRoadmap/>
       <AboutProject/>
+      <CtaBanner/>
       <AboutTeam/>
     </div>
   )
