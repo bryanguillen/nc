@@ -12,6 +12,20 @@ const COMMUNITY = "community"
 const ROADMAP = "roadmap"
 const TEAM = "team"
 
+interface ButtonProps {
+  text: string
+  variant?: 'primary' | 'primary-variant'
+}
+
+function Button({
+  text,
+  variant = 'primary'
+}: ButtonProps) {
+  return (
+    <button className={`app-button ${variant}`}>{text}</button>
+  )
+}
+
 function Welcome() {
   return (
     <TwoColumnSection id={WELCOME} title="Lorem Ipsum">
@@ -43,8 +57,8 @@ function Countdown() {
   return (
     <TwoColumnSection id={ACQUIRE} title={'NFT Drop Countdown'}>
       <div className="countdown-timer">
-        <p>{time}</p>
-        <button>Mint</button>
+        <p className="countdown-timer-text">{time}</p>
+        <Button text="Mint"/>
       </div>
       <div className="countdown-description">
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum .........</p>
@@ -88,10 +102,10 @@ function CommunityBenefits() {
   return (
     <TwoColumnSection id={COMMUNITY} title={'Community Benefits'}>
       <div>
-        <div className="project-specs-image"></div>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
       <div>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+        <div className="project-specs-image"></div>
       </div>
     </TwoColumnSection>
   )
@@ -101,10 +115,10 @@ function AboutProject() {
   return (
     <TwoColumnSection id={'about'} title={'Why This NFT Project?'}>
       <div>
-        <div className="project-specs-image"></div>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
       <div>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+        <div className="project-specs-image"></div>
       </div>
     </TwoColumnSection>
   )
@@ -219,7 +233,7 @@ const CtaBanner = () => {
     <div className="cta-banner">
       <div className="cta-banner-text">Want to stay up to date on Natty Clowns NFTs?</div>
       <div className="cta-banner-button">
-        <button>Follow Us On Twitter</button>
+        <Button text="Follow Us On Twitter" variant="primary-variant"/>
       </div>
     </div>
   )

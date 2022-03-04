@@ -12,11 +12,34 @@
 }
 
 /**********************
+ * App Button
+ **********************/
+
+.app-button {
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  min-width: 150px;
+  padding: 10px;
+}
+
+.primary {
+  background-color: #BB86F3;
+  color: #121212;
+}
+
+.primary-variant {
+  background-color: #3700b3;
+  color: #fff;
+}
+
+/**********************
  * Header
  **********************/
 
 .two-column-section {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding: 10px;
 }
 
@@ -30,7 +53,12 @@
 }
 
 .two-column-section-body > div:first-child {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.two-column-section-header {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /**********************
@@ -47,6 +75,7 @@
 
 .welcome-gallery-image {
   background-color: #ffffff;
+  border-radius: 10px;
   height: 100px;
   width: 100px;
 }
@@ -70,7 +99,9 @@
 
 .project-specs-image {
   background-color: #fff;
+  border-radius: 10px;
   height: 300px;
+  margin: 0 auto;
   width: 300px;
 }
 
@@ -141,19 +172,33 @@
 }
 
 /**********************
+ * Countdown timer
+ **********************/
+
+.countdown-timer-text {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/**********************
  * CTA Banner
  **********************/
 
 .cta-banner {
+  align-items: center;
   background-color: #1f1b24;
-  border-radius: 10px;;
+  border-radius: 10px;
   display: flex;
   flex-wrap: nowrap;
+  margin-bottom: 50px;
   padding: 10px;
 }
 
 .cta-banner-text {
   flex: 1;
+  font-size: 1.5rem;
+  padding-right: 10px;
 }
 
 /**********************
@@ -213,5 +258,9 @@
   .two-column-section-body > div:nth-of-type(2) {
     margin-bottom: 0px;
     padding-left: 5px;
+  }
+
+  .two-column-section-header {
+    text-align: left;
   }
 }
