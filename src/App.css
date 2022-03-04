@@ -1,7 +1,9 @@
 .app {
   animation: 0.35s fade-up-enter;
   background-color: #121212;
-  color: #fff;
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 1000px;
   min-height: 100vh;
 }
 
@@ -14,8 +16,8 @@
  **********************/
 
 .two-column-section {
-  padding: 10px;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .two-column-section-body {
@@ -85,6 +87,11 @@
   cursor: pointer;
 }
 
+.nav-link:hover,
+.nav-link:active {
+  color: #BB86F3;
+}
+
 .nav-links-md {
   display: none;
 }
@@ -103,6 +110,8 @@
 
 .navigation {
   align-items: center;
+  background-color: #121212;
+  color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -136,8 +145,11 @@
  **********************/
 
 .cta-banner {
+  background-color: #1f1b24;
+  border-radius: 10px;;
   display: flex;
   flex-wrap: nowrap;
+  padding: 10px;
 }
 
 .cta-banner-text {
