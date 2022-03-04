@@ -115,6 +115,7 @@
   flex-direction: column;
   height: 50px;
   justify-content: center;
+  margin: 20px;
   padding: 5px;
   width: 50px;
 }
