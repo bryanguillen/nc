@@ -1,0 +1,27 @@
+{
+  "name": "Natty Clowns NFT #19",
+  "description": "A bunch of crazy clowns who got jacked",
+  "image": "ipfs://NewUriToReplace/19.png",
+  "dna": "86d80625e52d68dcc492c284405ca164022f24c7",
+  "edition": 19,
+  "date": 1646952699951,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Body",
+      "value": "White"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Sad"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Original"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}

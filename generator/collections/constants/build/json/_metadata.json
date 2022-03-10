@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Natty Clowns NFT #1",
+    "description": "A bunch of crazy clowns who got jacked",
+    "image": "ipfs://NewUriToReplace/1.png",
+    "dna": "c5d89c3a778331b2b0455229bf313f5db6ec58d1",
+    "edition": 1,
+    "date": 1646952921570,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Blue"
+      },
+      {
+        "trait_type": "Body",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Face",
+        "value": "Angry"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  },
+  {
+    "name": "Natty Clowns NFT #2",
+    "description": "A bunch of crazy clowns who got jacked",
+    "image": "ipfs://NewUriToReplace/2.png",
+    "dna": "06171cb0a340fee9b02b28f117322b4c237bb874",
+    "edition": 2,
+    "date": 1646952921860,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Blue"
+      },
+      {
+        "trait_type": "Body",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Face",
+        "value": "Happy"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  },
+  {
+    "name": "Natty Clowns NFT #3",
+    "description": "A bunch of crazy clowns who got jacked",
+    "image": "ipfs://NewUriToReplace/3.png",
+    "dna": "710e7cba2ff19662848753adbf7e8696bb577408",
+    "edition": 3,
+    "date": 1646952922125,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Green"
+      },
+      {
+        "trait_type": "Body",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Face",
+        "value": "Angry"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  },
+  {
+    "name": "Natty Clowns NFT #4",
+    "description": "A bunch of crazy clowns who got jacked",
+    "image": "ipfs://NewUriToReplace/4.png",
+    "dna": "6e2ffe00934a68ef0851c1b9ff3ca59e486428b9",
+    "edition": 4,
+    "date": 1646952922395,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Blue"
+      },
+      {
+        "trait_type": "Body",
+        "value": "White"
+      },
+      {
+        "trait_type": "Face",
+        "value": "Happy"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  },
+  {
+    "name": "Natty Clowns NFT #5",
+    "description": "A bunch of crazy clowns who got jacked",
+    "image": "ipfs://NewUriToReplace/5.png",
+    "dna": "12785bc968fdd34f8db040266244e36759f9cadb",
+    "edition": 5,
+    "date": 1646952922646,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Green"
+      },
+      {
+        "trait_type": "Body",
+        "value": "White"
+      },
+      {
+        "trait_type": "Face",
+        "value": "Happy"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  },
+  {
+    "name": "Natty Clowns NFT #6",
+    "description": "A bunch of crazy clowns who got jacked",
+    "image": "ipfs://NewUriToReplace/6.png",
+    "dna": "513aa06f6c33cf6397dca515ea2587bffa2d66bf",
+    "edition": 6,
+    "date": 1646952922907,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Green"
+      },
+      {
+        "trait_type": "Body",
+        "value": "White"
+      },
+      {
+        "trait_type": "Face",
+        "value": "Sad"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  },
+  {
+    "name": "Natty Clowns NFT #7",
+    "description": "A bunch of crazy clowns who got jacked",
+    "image": "ipfs://NewUriToReplace/7.png",
+    "dna": "157e991c5475686dd4c4595bdd121170ee253084",
+    "edition": 7,
+    "date": 1646952923174,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Blue"
+      },
+      {
+        "trait_type": "Body",
+        "value": "White"
+      },
+      {
+        "trait_type": "Face",
+        "value": "Angry"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  },
+  {
+    "name": "Natty Clowns NFT #8",
+    "description": "A bunch of crazy clowns who got jacked",
+    "image": "ipfs://NewUriToReplace/8.png",
+    "dna": "e1cac5b18327eb4edad0d59582a904bfedbd5c4e",
+    "edition": 8,
+    "date": 1646952923433,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Green"
+      },
+      {
+        "trait_type": "Body",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Face",
+        "value": "Happy"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  },
+  {
+    "name": "Natty Clowns NFT #9",
+    "description": "A bunch of crazy clowns who got jacked",
+    "image": "ipfs://NewUriToReplace/9.png",
+    "dna": "f30632865082d9749f50297d6a9858bfbbc6721c",
+    "edition": 9,
+    "date": 1646952923674,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Green"
+      },
+      {
+        "trait_type": "Body",
+        "value": "White"
+      },
+      {
+        "trait_type": "Face",
+        "value": "Angry"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  },
+  {
+    "name": "Natty Clowns NFT #10",
+    "description": "A bunch of crazy clowns who got jacked",
+    "image": "ipfs://NewUriToReplace/10.png",
+    "dna": "77b925fa7cb47d38c35324f639b48ab69987cb85",
+    "edition": 10,
+    "date": 1646952923944,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Blue"
+      },
+      {
+        "trait_type": "Body",
+        "value": "White"
+      },
+      {
+        "trait_type": "Face",
+        "value": "Sad"
+      }
+    ],
+    "compiler": "HashLips Art Engine"
+  }
+]
