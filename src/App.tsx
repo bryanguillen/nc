@@ -5,6 +5,12 @@ import './App.css'
 
 import logo from './assets/logo.png'
 
+// Welcome images
+import welcome1 from './assets/nfts/constants-shirts-hair/2.png'
+import welcome2 from './assets/nfts/constants-shirts-hair/8.png'
+import welcome3 from './assets/nfts/constants-hair-tattoo/1.png'
+import welcome4 from './assets/nfts/constants-hair-tattoo/3.png'
+
 const WELCOME = "welcome"
 const ACQUIRE = "acquire"
 const SPECS = "specs"
@@ -33,11 +39,11 @@ function Welcome() {
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum .........</p>
       </div>
       <div className="welcome-gallery">
-        <div className="welcome-gallery-image"></div>
-        <div className="welcome-gallery-image"></div>
+        <img className="welcome-gallery-image" src={welcome1}/>
+        <img className="welcome-gallery-image" src={welcome2}/>
         <div className="welcome-gallery-image-break"></div>
-        <div className="welcome-gallery-image"></div>
-        <div className="welcome-gallery-image"></div>
+        <img className="welcome-gallery-image" src={welcome3}/>
+        <img className="welcome-gallery-image" src={welcome4}/>
       </div>
     </TwoColumnSection>
   )
