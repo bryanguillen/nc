@@ -51,11 +51,11 @@ function Welcome() {
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum .........</p>
       </div>
       <div className="welcome-gallery">
-        <img className="welcome-gallery-image" src={welcome1}/>
-        <img className="welcome-gallery-image" src={welcome2}/>
-        <div className="welcome-gallery-image-break"></div>
         <img className="welcome-gallery-image" src={welcome3}/>
         <img className="welcome-gallery-image" src={welcome4}/>
+        <div className="welcome-gallery-image-break"></div>
+        <img className="welcome-gallery-image" src={welcome1}/>
+        <img className="welcome-gallery-image" src={welcome2}/>
       </div>
     </TwoColumnSection>
   )
