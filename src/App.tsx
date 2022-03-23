@@ -11,6 +11,9 @@ import welcome2 from './assets/nfts/constants-shirts-hair/8.png'
 import welcome3 from './assets/nfts/constants-hair-tattoo/1.png'
 import welcome4 from './assets/nfts/constants-hair-tattoo/3.png'
 
+// Project specs images
+import projectSpecNft from './assets/nfts/constants-shirts-hair/24.png'
+
 const WELCOME = "welcome"
 const ACQUIRE = "acquire"
 const SPECS = "specs"
@@ -80,7 +83,7 @@ function ProjectSpecs() {
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
       <div>
-        <div className="project-specs-image"></div>
+        <img src={projectSpecNft} alt="nft - sad clown in suit" className="project-specs-image"/>
       </div>
     </TwoColumnSection>
   )
