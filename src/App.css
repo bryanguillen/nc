@@ -174,8 +174,11 @@
  * Countdown timer
  **********************/
 
-.countdown-timer-text {
+.coming-soon-container {
+  align-items: center;
+  display: flex;
   font-size: 1.8rem;
+  justify-content: center;
   margin-bottom: 20px;
   text-align: center;
 }

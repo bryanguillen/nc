@@ -63,23 +63,26 @@ function Welcome() {
 }
 
 function Countdown() {
-  const [time, setTime] = useState(0)
+  // const [time, setTime] = useState(0)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(previousState => previousState + 1)
-    }, 1000)
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setTime(previousState => previousState + 1)
+  //   }, 1000)
 
-    return () => clearInterval(interval)
-  }, [])
+  //   return () => clearInterval(interval)
+  // }, [])
 
   return (
     <TwoColumnSection id={ACQUIRE} title={'NFT Drop'}>
-      <div className="countdown-timer">
+      {/* <div className="countdown-timer">
         <p className="countdown-timer-text">{time}</p>
         <Button text="Mint"/>
+      </div> */}
+      <div className="coming-soon-container">
+        <div>Coming Soon...</div>
       </div>
-      <div className="countdown-description">
+      <div>
         <p>We currently have a rough timeline for when we will be doing the initial drop.  Stay tuned, it'll be announced very soon.</p>
         <p>At the drop, you'll have a chance to mint an NFT for an affordable price.  We will be doing multiple drops, those who mint early will get the best deal, so stay tuned.</p>
       </div>
