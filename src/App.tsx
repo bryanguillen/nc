@@ -83,7 +83,7 @@ function ProjectSpecs() {
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
       <div>
-        <img src={projectSpecNft} alt="nft - sad clown in suit" className="project-specs-image"/>
+        <img src={projectSpecNft} alt="nft - sad clown in suit" className="section-image"/>
       </div>
     </TwoColumnSection>
   )
@@ -101,7 +101,7 @@ function ProjectRoadmap() {
         </ol>
       </div>
       <div>
-        <div className="project-specs-image"></div>
+        <div className="section-image"></div>
       </div>
     </TwoColumnSection>
   )
@@ -114,7 +114,7 @@ function CommunityBenefits() {
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
       <div>
-        <div className="project-specs-image"></div>
+        <div className="section-image"></div>
       </div>
     </TwoColumnSection>
   )
@@ -127,7 +127,7 @@ function AboutProject() {
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
       <div>
-        <div className="project-specs-image"></div>
+        <div className="section-image"></div>
       </div>
     </TwoColumnSection>
   )
@@ -140,7 +140,7 @@ function AboutTeam() {
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
       <div>
-        <div className="project-specs-image"></div>
+        <div className="section-image"></div>
       </div>
     </TwoColumnSection>
   )
