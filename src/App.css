@@ -43,6 +43,10 @@
   padding: 10px;
 }
 
+.two-column-section p {
+  margin-bottom: 10px;
+}
+
 .two-column-section-body {
   display: flex;
   flex-direction: column;
