@@ -15,7 +15,13 @@ import welcome4 from './assets/nfts/constants-hair-tattoo/3.png'
 import projectSpecNft from './assets/nfts/constants-shirts-hair/24.png'
 
 // Community benefit images
-import communityBenefitsNft from './assets/nfts/constants/3.png';
+import communityBenefitsNft from './assets/nfts/constants/3.png'
+
+// About project images
+import aboutProjectNft from './assets/nfts/constants/8.png'
+
+// About team images
+import aboutTeamNft from './assets/nfts/constants-hair/1.png'
 
 const WELCOME = "welcome"
 const ACQUIRE = "acquire"
@@ -130,7 +136,7 @@ function AboutProject() {
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
       <div>
-        <div className="section-image"></div>
+        <img src={aboutProjectNft} alt="happy and shirtless clown" className="section-image"/>
       </div>
     </TwoColumnSection>
   )
@@ -143,7 +149,7 @@ function AboutTeam() {
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
       <div>
-        <div className="section-image"></div>
+        <img src={aboutTeamNft} alt="angry clown and shirtless" className="section-image"/>
       </div>
     </TwoColumnSection>
   )
