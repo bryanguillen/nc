@@ -269,7 +269,7 @@ const CtaBanner = () => {
     <div className="cta-banner">
       <div className="cta-banner-text">Want to stay up to date on Natty Clowns NFTs?</div>
       <div className="cta-banner-button">
-        <Button text="Follow Us On Twitter" variant="primary-variant"/>
+        <Button text="Follow Us On Instagram" variant="primary-variant"/>
       </div>
     </div>
   )
