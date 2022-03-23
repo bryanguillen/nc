@@ -48,7 +48,8 @@ function Welcome() {
   return (
     <TwoColumnSection id={WELCOME} title="Natty Clowns NFT">
       <div className="welcome-text-container">
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum .........</p>
+        <p>Meet Larry (first image) and Joe (who's in the rest of the images).  They were both frail and miserable.  Now, they're jacked and the stars of this NFT collection, which consists of 1,111 NFTs.</p>
+        <p>Are you into lifting weights and NFTs?  If so, you've arrived at the right place, my friend.  Keep scrolling down for more.</p>
       </div>
       <div className="welcome-gallery">
         <img className="welcome-gallery-image" src={welcome3}/>
@@ -79,7 +80,7 @@ function Countdown() {
         <Button text="Mint"/>
       </div>
       <div className="countdown-description">
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum .........</p>
+        <p>We currently have a rough timeline for when we will be doing the initial drop.  Stay tuned, it'll be announced very soon.</p>
       </div>
     </TwoColumnSection>
   )
@@ -89,7 +90,10 @@ function ProjectSpecs() {
   return (
     <TwoColumnSection id={SPECS} title={'Project Specs'}>
       <div>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+        <p>This project will consist of 1,111 NFTs.</p>
+        <p>Larry and Joe's images will be programmatically generated from a set of traits.  These traits include different faces, hair styles (or lack thereof), shirts, and tattoos.</p>
+        <p>These assets will be stored as ERC-721 tokens on the Ethereum blockchain, and of course, hosted on IPFS.</p>
+        <p>As you'll see below, to access the benefits of owning a swole clown, you will need be signed into your Metamask wallet.</p>
       </div>
       <div>
         <img src={projectSpecNft} alt="nft - sad clown in suit" className="section-image"/>
@@ -146,7 +150,10 @@ function AboutTeam() {
   return (
     <TwoColumnSection id={TEAM} title={'About Team'}>
       <div>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+        <p>Our team is small, very small.</p>
+        <p>It's currently made up of 2 people, a software engineer (Bryan) and an artist (Yudisstiann).</p>
+        <p>We are very excited to have the opportunity to bring this art into fruition.  More importantly though, we are excited about the community that will be built around it.</p>
+        <p>We look forward to getting to know those of you who support our work.</p>
       </div>
       <div>
         <img src={aboutTeamNft} alt="angry clown and shirtless" className="section-image"/>
