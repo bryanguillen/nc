@@ -46,7 +46,7 @@ function Button({
 
 function Welcome() {
   return (
-    <TwoColumnSection id={WELCOME} title="Lorem Ipsum">
+    <TwoColumnSection id={WELCOME} title="Natty Clowns NFT">
       <div className="welcome-text-container">
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum .........</p>
       </div>
@@ -73,7 +73,7 @@ function Countdown() {
   }, [])
 
   return (
-    <TwoColumnSection id={ACQUIRE} title={'NFT Drop Countdown'}>
+    <TwoColumnSection id={ACQUIRE} title={'NFT Drop'}>
       <div className="countdown-timer">
         <p className="countdown-timer-text">{time}</p>
         <Button text="Mint"/>
