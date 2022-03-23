@@ -14,6 +14,9 @@ import welcome4 from './assets/nfts/constants-hair-tattoo/3.png'
 // Project specs images
 import projectSpecNft from './assets/nfts/constants-shirts-hair/24.png'
 
+// Community benefit images
+import communityBenefitsNft from './assets/nfts/constants/3.png';
+
 const WELCOME = "welcome"
 const ACQUIRE = "acquire"
 const SPECS = "specs"
@@ -114,7 +117,7 @@ function CommunityBenefits() {
         <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
       </div>
       <div>
-        <div className="section-image"></div>
+        <img src={communityBenefitsNft} alt="angry and shirtless clown" className="section-image"/>
       </div>
     </TwoColumnSection>
   )
