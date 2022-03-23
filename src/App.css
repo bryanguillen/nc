@@ -75,17 +75,13 @@
 
 .welcome-gallery-image {
   border-radius: 10px;
-  height: 100px;
-  width: 100px;
+  height: 175px;
+  margin-bottom: 10px;
+  width: 175px;
 }
 
 .welcome-gallery-image:nth-child(1n) {
   margin-right: 10px;
-}
-
-.welcome-gallery-image:nth-of-type(4),
-.welcome-gallery-image:nth-of-type(5) {
-  margin-top: 10px;
 }
 
 .welcome-gallery-image-break {
@@ -97,8 +93,8 @@
  **********************/
 
 .project-specs-image {
-  background-color: #fff;
   border-radius: 10px;
+  display: block;
   height: 300px;
   margin: 0 auto;
   width: 300px;
