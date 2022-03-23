@@ -81,6 +81,7 @@ function Countdown() {
       </div>
       <div className="countdown-description">
         <p>We currently have a rough timeline for when we will be doing the initial drop.  Stay tuned, it'll be announced very soon.</p>
+        <p>At the drop, you'll have a chance to mint an NFT for an affordable price.  We will be doing multiple drops, those who mint early will get the best deal, so stay tuned.</p>
       </div>
     </TwoColumnSection>
   )
@@ -124,7 +125,12 @@ function CommunityBenefits() {
   return (
     <TwoColumnSection id={COMMUNITY} title={'Community Benefits'}>
       <div>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+        <p>We are not going to sit here and pretend that we have it all figured out.</p>
+        <p>Here is what we do know though: We will build a community of like minded and ambitious people.</p>
+        <p>Our Why: <strong>We want you to make at least one real connection, with a fellow member, that will impact your life in a positive way</strong>.</p>
+        <p>What does this one connection look like?  Well, it's someone who shares the same values as you.  We believe that a large part of your net worth, in life, is your network.</p>
+        <p>Lastly, how will we communicate?  This, we can define along the way.  It could be a Discord server and more.</p>
+        <p>So, if you're into lifting weights and crypto, come and join.</p>
       </div>
       <div>
         <img src={communityBenefitsNft} alt="angry and shirtless clown" className="section-image"/>
@@ -137,7 +143,9 @@ function AboutProject() {
   return (
     <TwoColumnSection id={'about'} title={'Why This NFT Project?'}>
       <div>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
+        <p>Two reasons: <strong>The art</strong> and <strong>the community</strong>.</p>
+        <p>We love the NFT space, but honestly, we feel like it could use more than just apes (even though we love apes and everything else).  So with that in minded, <strong>what's the harm in creating art that weight lifters resonate with.</strong>  Art for the sake of art.</p>
+        <p>Second, as mentioned above, other than art for the sake of art, we want to get like minded and ambitious people together.  We feel that those who have the right connections get <strong>many advantages</strong> in life.  We want that for ourselves, and <strong>we want it for you</strong>.</p>
       </div>
       <div>
         <img src={aboutProjectNft} alt="happy and shirtless clown" className="section-image"/>
