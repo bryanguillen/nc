@@ -30,17 +30,18 @@ const COMMUNITY = "community"
 const ROADMAP = "roadmap"
 const TEAM = "team"
 
-interface ButtonProps {
+interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
   text: string
   variant?: 'primary' | 'primary-variant'
 }
 
 function Button({
   text,
-  variant = 'primary'
+  variant = 'primary',
+  ...rest
 }: ButtonProps) {
   return (
-    <button className={`app-button ${variant}`}>{text}</button>
+    <button {...rest} className={`app-button ${variant}`}>{text}</button>
   )
 }
 
@@ -268,7 +269,7 @@ const CtaBanner = () => {
     <div className="cta-banner">
       <div className="cta-banner-text">Want to stay up to date on Natty Clowns NFTs?</div>
       <div className="cta-banner-button">
-        <Button text="Follow Us On Instagram" variant="primary-variant"/>
+        <Button onClick={() => window.location.href='https://instagram.com/nattyclowns'} text="Follow Us On Instagram" variant="primary-variant"/>
       </div>
     </div>
   )
