@@ -62,6 +62,14 @@ function Welcome() {
   )
 }
 
+function ComingSoon() {
+  return (
+    <div className="coming-soon-container">
+      <div>Coming Soon...</div>
+    </div>
+  )
+}
+
 function Countdown() {
   // const [time, setTime] = useState(0)
 
@@ -79,9 +87,7 @@ function Countdown() {
         <p className="countdown-timer-text">{time}</p>
         <Button text="Mint"/>
       </div> */}
-      <div className="coming-soon-container">
-        <div>Coming Soon...</div>
-      </div>
+      <ComingSoon/>
       <div>
         <p>We currently have a rough timeline for when we will be doing the initial drop.  Stay tuned, it'll be announced very soon.</p>
         <p>At the drop, you'll have a chance to mint an NFT for an affordable price.  We will be doing multiple drops, those who mint early will get the best deal, so stay tuned.</p>
@@ -109,16 +115,9 @@ function ProjectSpecs() {
 function ProjectRoadmap() {
   return (
     <TwoColumnSection id={ROADMAP} title={'Project Roadmap'}>
+      <ComingSoon/>
       <div>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum..........</p>
-        <ol>
-          <li>Step 1: Some random step</li>
-          <li>Step 2: Some random step</li>
-          <li>Step 3: Some random step</li>
-        </ol>
-      </div>
-      <div>
-        <div className="section-image"></div>
+        <p>We are very early on and will be defining this along the way.</p>
       </div>
     </TwoColumnSection>
   )
