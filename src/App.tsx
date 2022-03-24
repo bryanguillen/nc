@@ -11,8 +11,8 @@ import welcome2 from './assets/nfts/constants-shirts-hair/8.png'
 import welcome3 from './assets/nfts/constants-hair-tattoo/1.png'
 import welcome4 from './assets/nfts/constants-hair-tattoo/3.png'
 
-// Project specs images
-import projectSpecNft from './assets/nfts/constants-shirts-hair/24.png'
+// About team images
+import projectSpecNft from './assets/nfts/constants-hair/1.png'
 
 // Community benefit images
 import communityBenefitsNft from './assets/nfts/constants/3.png'
@@ -20,8 +20,8 @@ import communityBenefitsNft from './assets/nfts/constants/3.png'
 // About project images
 import aboutProjectNft from './assets/nfts/constants/8.png'
 
-// About team images
-import aboutTeamNft from './assets/nfts/constants-hair/1.png'
+// Project specs images
+import aboutTeamNft from './assets/nfts/constants-shirts-hair/24.png'
 
 const WELCOME = "welcome"
 const ACQUIRE = "acquire"
