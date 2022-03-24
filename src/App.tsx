@@ -53,11 +53,11 @@ function Welcome() {
         <p>Are you into lifting weights and NFTs?  If so, you've arrived at the right place, my friend.  Keep scrolling down for more.</p>
       </div>
       <div className="welcome-gallery">
-        <img className="welcome-gallery-image" src={welcome3}/>
-        <img className="welcome-gallery-image" src={welcome4}/>
+        <img className="welcome-gallery-image" src={welcome3} alt="Natty clown nft"/>
+        <img className="welcome-gallery-image" src={welcome4} alt="Natty clown nft"/>
         <div className="welcome-gallery-image-break"></div>
-        <img className="welcome-gallery-image" src={welcome1}/>
-        <img className="welcome-gallery-image" src={welcome2}/>
+        <img className="welcome-gallery-image" src={welcome1} alt="Natty clown nft"/>
+        <img className="welcome-gallery-image" src={welcome2} alt="Natty clown nft"/>
       </div>
     </TwoColumnSection>
   )
