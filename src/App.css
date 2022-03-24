@@ -219,10 +219,27 @@
 }
 
 /**********************
+ * Footer
+ **********************/
+
+.footer {
+  border-top: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/**********************
  * Media Query
  **********************/
 
 @media only screen and (min-width: 768px) {
+  .footer {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
   .hamburger-icon {
     display: none;
   }

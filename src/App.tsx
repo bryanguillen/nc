@@ -274,6 +274,19 @@ const CtaBanner = () => {
   )
 }
 
+function Footer() {
+  return (
+    <div className="footer">
+      <div>
+        <img src={logo} className="navigation-logo" alt="Natty Clowns Logo"/>
+      </div>
+      <div>
+        <p>© 2022 Natty Clowns NFT</p>
+      </div>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="app">
@@ -287,6 +300,7 @@ function App() {
       <AboutProject/>
       <CtaBanner/>
       <AboutTeam/>
+      <Footer/>
     </div>
   )
 }
