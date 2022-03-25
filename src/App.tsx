@@ -104,7 +104,7 @@ function ProjectSpecs() {
         <p>This project will consist of 1,111 NFTs.</p>
         <p>Larry and Joe's images will be programmatically generated from a set of traits.  These traits include different faces, hair styles (or lack thereof), shirts, and tattoos.</p>
         <p>These assets will be stored as ERC-721 tokens on the Ethereum blockchain, and of course, hosted on IPFS.</p>
-        <p>As you'll see below, to access the benefits of owning a swole clown, you will need be signed into your Metamask wallet.</p>
+        <p>As you'll see below, to access the benefits of owning a swole clown, you will need to be signed into your Metamask wallet.</p>
       </div>
       <div>
         <img src={projectSpecNft} alt="nft - sad clown in suit" className="section-image"/>
@@ -147,7 +147,7 @@ function AboutProject() {
     <TwoColumnSection id={'about'} title={'Why This NFT Project?'}>
       <div>
         <p>Two reasons: <strong>The art</strong> and <strong>the community</strong>.</p>
-        <p>We love the NFT space, but honestly, we feel like it could use more than just apes (even though we love apes and everything else).  So with that in minded, <strong>what's the harm in creating art that weight lifters resonate with.</strong>  Art for the sake of art.</p>
+        <p>We love the NFT space, but honestly, we feel like it could use more than just apes (even though we love apes and everything else).  So with that in mind, <strong>what's the harm in creating art that weight lifters resonate with.</strong>  Art for the sake of art.</p>
         <p>Second, as mentioned above, other than art for the sake of art, we want to get like minded and ambitious people together.  We feel that those who have the right connections get <strong>many advantages</strong> in life.  We want that for ourselves, and <strong>we want it for you</strong>.</p>
       </div>
       <div>
