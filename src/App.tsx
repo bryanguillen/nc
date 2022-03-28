@@ -267,9 +267,9 @@ function Navigation() {
 const CtaBanner = () => {
   return (
     <div className="cta-banner">
-      <div className="cta-banner-text">Want to stay up to date on Natty Clowns NFTs?</div>
+      <div className="cta-banner-text">Want to stay up to date on Natty Clowns?</div>
       <div className="cta-banner-button">
-        <Button onClick={() => window.location.href='https://instagram.com/nattyclowns'} text="Follow Us On Instagram" variant="primary-variant"/>
+        <Button onClick={() => window.location.href='https://mobile.twitter.com/NattyClownsNFTs'} text="Follow Us On Twitter" variant="primary-variant"/>
       </div>
     </div>
   )
