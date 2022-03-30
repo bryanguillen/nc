@@ -105,6 +105,19 @@
 }
 
 /**********************
+ * Roadmap
+ **********************/
+
+.roadmap-image {
+  height: 300px;
+  width: 300px;
+}
+
+.roadmap-list li {
+  margin-top: 10px;
+}
+
+/**********************
  * Navigation
  **********************/
 
