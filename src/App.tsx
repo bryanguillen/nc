@@ -17,6 +17,9 @@ import projectSpecNft from './assets/nfts/constants-hair/1.png'
 // Community benefit images
 import communityBenefitsNft from './assets/nfts/constants/3.png'
 
+// Roadmap
+import roadMapImage from './assets/roadmap.svg'
+
 // About project images
 import aboutProjectNft from './assets/nfts/constants/8.png'
 
@@ -49,8 +52,9 @@ function Welcome() {
   return (
     <TwoColumnSection id={WELCOME} title="Natty Clowns NFT">
       <div className="welcome-text-container">
-        <p>Meet Larry (first image) and Joe (who's in the rest of the images).  They were both frail and miserable.  Now, they're jacked and the stars of this NFT collection, which consists of 1,111 NFTs.</p>
-        <p>Are you into lifting weights and NFTs?  If so, you've arrived at the right place, my friend.  Keep scrolling down for more.</p>
+        <p>Are you into lifting weights and NFTs?  If so, you've arrived at the right place, my friend.</p>
+        <p>Meet Larry (first image) and Joe (who's in the rest of the images).  They were both frail and miserable.  Now, they're jacked and the stars of this new NFT collection, which consists of 1,111 NFTs.</p>
+        <p>Scroll down for more info.</p>
       </div>
       <div className="welcome-gallery">
         <img className="welcome-gallery-image" src={welcome3} alt="Natty clown nft"/>
@@ -90,8 +94,9 @@ function Countdown() {
       </div> */}
       <ComingSoon/>
       <div>
-        <p>We currently have a rough timeline for when we will be doing the initial drop.  Stay tuned, it'll be announced very soon.</p>
-        <p>At the drop, you'll have a chance to mint an NFT for an affordable price.  We will be doing multiple drops, those who mint early will get the best deal, so stay tuned.</p>
+        <p>Currently, we are aiming to do an initial drop on Thursday, April 7th, 2022.</p>
+        <p>This drop will be for the early adopters.  As a token of appreciation, it'll be an opportunity to <strong>mint an NFT for FREE</strong>.  #freemint :)</p>
+        <p>Why would you even bother minting one of our NFTs?  Checkout the next few sections, especially the roadmap section, to see if this project is a fit for your portfolio.</p>
       </div>
     </TwoColumnSection>
   )
@@ -116,9 +121,18 @@ function ProjectSpecs() {
 function ProjectRoadmap() {
   return (
     <TwoColumnSection id={ROADMAP} title={'Project Roadmap'}>
-      <ComingSoon/>
       <div>
-        <p>We are very early on and will be defining this along the way.</p>
+        <img src={roadMapImage} className="roadmap-image" alt="roadmpa illustration"/>
+      </div>
+      <div>
+        <p>Here's where we currently stand with our roadmap, which will definitely evolve as we grow.</p>
+        <ol className="roadmap-list">
+          <li>Phase 1 - Build Initial Community: Here is where we will have periodic drops in an attempt to build our community.  This is where we will attract what matters most, the people.</li>
+          <li>Phase 2 - Open & Experiment With Communication Channels: This is where we will begin to leverage (and maybe build) tools to communicate.  We want to provide more than just a Discord server.</li>
+          <li>Phase 3 - Attract High Profile Folks: In this phase, we want to attract some folks you may or may not know.  The goal with this is to have people, who have large followings, join.  The reason is: We of course want to put Natty NFTs on the map.</li>
+          <li>Phase 4 & Beyond: This is yet to be defined.  But our rough vision is that we want to accumulate exclusive knowledge, knowledge and connections that benefit you.  :)</li>
+        </ol>
+        <p>Note: The timeline for each will be announced as we go.</p>
       </div>
     </TwoColumnSection>
   )
