@@ -1,0 +1,39 @@
+{
+  "name": "Natty Clowns NFT #4",
+  "description": "A bunch of crazy clowns who got jacked",
+  "image": "ipfs://NewUriToReplace/4.png",
+  "dna": "b49b3a3e99e36fb37ffabb684a84a3710f9aeb49",
+  "edition": 4,
+  "date": 1648861813241,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Body",
+      "value": "White"
+    },
+    {
+      "trait_type": "Rock Smack - Face",
+      "value": "BoredFace"
+    },
+    {
+      "trait_type": "Rock Smack - Eyes",
+      "value": "BruisedEye"
+    },
+    {
+      "trait_type": "Rock Smack - Bruise",
+      "value": "Bruise"
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Headphones"
+    },
+    {
+      "trait_type": "Tattoo",
+      "value": "Quarter"
+    }
+  ],
+  "compiler": "HashLips Art Engine"
+}
